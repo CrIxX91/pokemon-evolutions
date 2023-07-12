@@ -15,7 +15,7 @@ export const Card:FC<CardProps> = ({name,sprite,bgcolor,types}:CardProps) => {
         <p className='card__name'>{ name.charAt(0).toUpperCase() + name.slice(1)}</p>
         <div className='card__types'>
           {
-            types.map((typepkm)=> <img src={`../../public/icons/${typepkm}.svg`} className='card__typeicon' key={typepkm}/>)
+            types.map((typepkm)=> <img src={`/icons/${typepkm}.svg`} className='card__typeicon' key={typepkm}/>)
           }
         </div>
         <div className='card__circle'></div>
