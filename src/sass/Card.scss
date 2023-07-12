@@ -1,0 +1,60 @@
+@use 'variables' as v;
+
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    // background-color: v.$color2;
+    // box-shadow: 3px 3px 10px;
+    padding: 48px 12px 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &__name{
+        background-color: v.$color1;
+        text-align: center;
+        border-radius: 10px;
+        color: v.$color6;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4px 5px;
+    }
+    &__circle{
+        background-image: url('../../public/images/pokeball.png');   
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 56px;
+        left: 24px;
+    }
+
+    &__img{
+        position: absolute;
+        z-index: 1;
+        width: 90%;
+    }
+    &__types{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+        height: 32px;
+        // background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__typeicon{
+        width: 20px;
+        height: 20px;;
+    }
+}
